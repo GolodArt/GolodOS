@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golod OS 0.2</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            cursor: none;
+            font-family: Arial, sans-serif;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+        .custom-cursor {
+            mix-blend-mode: difference;
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            pointer-events: none;
+            transition: transform 0.1s ease;
+            z-index: 101;
+        }
+        .hello-world {
+            width: 100%;
+            font-size: 13px;
+            font-family: inherit;
+            color: #313035;
+        }
+        .sticky-container {
+            mix-blend-mode: difference;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 30px 20px 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+            box-sizing: border-box;
+        }
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            color: #ffffff;
+            flex-grow: 1;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        .eyes {
+            margin: 0 20px;
+        }
+        .line {
+            width: 110px;
+            height: 1px;
+            background-color: #ffffff;
+        }
+        .arrow {
+           
+        }
+        .circle-button {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            cursor: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            background-color: #000000;
+            position: absolute;
+            right: 20px;
+            pointer-events: auto;
+            z-index: 100;
+        }
+        .package {
+            width: 100%;
+            padding: 0 20px;
+            margin-top: 50px;
+            box-sizing: border-box;
+        }
+        .lorem-text {
+            max-width: 800px;
+            font-size: 15px;
+            line-height: 1.6;
+            text-align: justify;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+        .DopustimKartinka {
+            height: 500px;
+            max-width: 800px;
+            background-color: #ffffff;
+            margin: auto;rgb(255, 255, 255)
+        }
+        .podval {
+            margin-top: 50px;
+            height: 1500px;
+            width: 100%;
+            background-color: #313035;
+        }
+        .kartinka {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            display: flex;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hello-world">Hello, World!</div>
+    <div class="sticky-container">
+        <div class="title">
+            <span style="padding-right: 15px;">Артём</span>
+            <span class="line"></span>
+            <span class="eyes">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.3 33.1" style="width: 35px; height: auto;">
+        <g>
+            <path fill="#FFFFFF" d="M29.8,10.5c-0.6,3.3,0.5,6.2,2.4,6.6c2,0.4,4.1-2,4.7-5.2c0.6-3.3-0.5-6.2-2.4-6.6S30.5,7.3,29.8,10.5z"/>
+            <path fill="#FFFFFF" d="M11.1,10.5c-0.6,3.3,0.5,6.2,2.4,6.6c2,0.4,4.1-2,4.7-5.2c0.6-3.3-0.5-6.2-2.4-6.6S11.7,7.3,11.1,10.5z"/>
+            <path fill="#FFFFFF" d="M40.2,7c-1.2-3.3-3.5-6.2-7-6.8c-3.5-0.7-6.7,1.2-9,3.7c-1,1-1.8,2.3-2.5,3.7c-0.1-0.2-0.1-0.4-0.2-0.6c-1.2-3.3-3.5-6.2-7-6.8c-3.5-0.7-6.7,1.2-9,3.7c-2.4,2.6-4.1,6.4-5,10.6c-0.8,4.2-0.6,8.4,0.7,11.7c1.2,3.3,3.5,6.2,7,6.8c3.5,0.7,6.7-1.1,9-3.7c0.9-1.1,1.8-2.3,2.5-3.7c0.1,0.2,0.1,0.4,0.2,0.6c1.2,3.3,3.5,6.2,7,6.8c3.5,0.7,6.7-1.1,9-3.7c2.4-2.6,4.1-6.4,4.9-10.6C41.7,14.4,41.4,10.3,40.2,7z M19.7,18.2c-1.5,7.7-6.5,13.3-11.1,12.4C3.9,29.7,1.4,22.7,2.9,15C4.4,7.2,9.3,1.7,14,2.6C18.6,3.5,21.2,10.4,19.7,18.2z M38.4,18.2c-1.5,7.7-6.5,13.3-11.1,12.4c-3.2-0.6-5.5-4.2-6-8.9c0.3-1,0.6-2,0.8-3c0.5-2.4,0.6-4.7,0.4-6.9c2.1-6,6.3-10,10.2-9.2C37.4,3.5,39.9,10.4,38.4,18.2z"/>
+        </g>
+    </svg>
+</span>
+            <span class="line"></span>
+            <span class="arrow">
+    <svg width="10" height="10" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="0,0 15,10 0,20" fill="#FFFFFF" />
+    </svg>
+</span>
+            <span style="padding-left: 15px;">Голод</span>
+        </div>
+        <div class="circle-button" id="circleButton" onclick="alert('Тут будет менюшка!')"></div>
+    </div>
+    <div class="package">
+        <div class="lorem-text">
+            <strong>Скоро здесь будет манифест, а до тех пор <em>Lorem ipsum</em>!</strong> 
+           <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. 
+           <br><br>
+            Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc
+        </div>
+        <img class="kartinka" src="Color-test.jpg" alt="">
+        <div class="DopustimKartinka"></div>
+    </div>
+    <div class="podval"></div>
+    <svg class="custom-cursor" id="cursor" viewBox="0 0 20 20">
+        <polygon points="0,0 15,5 0,15" fill="#ffffff" />
+    </svg>
+    <script>
+        document.addEventListener("mousemove", function(e) {
+            let cursor = document.getElementById("cursor");
+            cursor.style.left = e.clientX + "px";
+            cursor.style.top = e.clientY + "px";
+        });
+
+        document.getElementById("circleButton").addEventListener("mouseenter", function() {
+            let cursor = document.getElementById("cursor");
+            cursor.innerHTML = '<polygon points="0,0 15,5 0,15" stroke="#ffffff" stroke-width="2" />';
+        });
+        
+        document.getElementById("circleButton").addEventListener("mouseleave", function() {
+            let cursor = document.getElementById("cursor");
+            cursor.innerHTML = '<polygon points="0,0 15,5 0,15" fill="#ffffff" />';
+        });
+    </script>
+</body>
+</html>
